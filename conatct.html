@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Details</title>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <link rel="icon" href="call_logo.jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        /* .requred input:after{
+            content:"*";
+        } */
+       
+    </style>
+
+    <body class="container" style="color:darkslateblue;">
+        <center><b><h1 style="color:darkslateblue;font-weight:10px;">----- Contact Me -----</h1></b>
+        <h1>👇🏼</h1>
+        <br>
+        <div class="d" >
+        <form id="form"  style="display:grid; text-align:justify;justify-content:center;border:medium;width:50%;"><br>
+            <b><p  >First Name: &nbsp;&nbsp;&nbsp;<br><input type="text"required placeholder="First Name"style="width:400px;"></p></b><br>
+            <b><p >Last Name: &nbsp;&nbsp;&nbsp;<br><input type="text" required placeholder="Last Name"style="width:400px;" ></p></b><br>
+            <b><p >Email Address: &nbsp;&nbsp;&nbsp;<br><input type="text"required placeholder="Email Address" style="width:400px;"></p></b><br>
+            <b><p>Comment/Questions:&nbsp;</p></b><textarea placeholder='Enter comment...' maxlength='1000' minlength='100'></textarea><br><br>
+           <a href="#"><button onclick="send()" type="button" style= "width:fit-content; background-color:darkslateblue; color:azure;border-radius:50px;height:auto;">Send Message</button></a><br>
+        </form>
+        </div>
+    </center>
+    <script>
+        function send(){
+            document.getElementById("form").reset();
+            alert("sent successfully");
+        }
+    </script>
+       
+
+    </body>
+</html>

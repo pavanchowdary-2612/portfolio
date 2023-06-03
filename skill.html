@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+       <link rel="icon" href="sk.png">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <style>
+        .container{
+            width: 50%;
+            margin: 0 auto;
+            display:block;
+            justify-content: center;
+            padding:20px;
+          }
+          @keyframes load{
+            from {
+              width: 0%
+            }
+          }
+          @-webkit-keyframes load{
+            from {
+              width: 0%
+            }
+          }
+          @-moz-keyframes load{
+            from {
+              width: 0%
+            }
+          }
+          @-o-keyframes load{
+            from {
+              width: 0%
+            }
+          }
+          
+          .bar{
+            background-color: #EEE;
+            padding: 2px;
+            display:block;
+            justify-content: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #FFF;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+          }
+          .bar::before{
+            content:  attr(data-skill);
+            background-color: #f3b0ff;
+            display: inline-block;
+            padding: 5px 0 5px 10px;
+            border-radius: inherit;
+            animation: load 2s 0s;
+            -webkit-animation: load 2s 0s;
+            -moz-animation: load 2s 0s;
+            -o-animation: load 2s 0s;
+          }
+          
+          .bar.front::before{
+            background-color: #ffcc33;
+          }
+          .bar.back::before{
+            background-color: #a6cfe3;
+          }
+          
+          .bar.learning::before{
+            width: calc(20% - 10px);
+          }
+          .bar.basic::before{
+            width: calc(40% - 10px);
+          }
+          .bar.intermediate::before{
+            width: calc(60% - 10px);
+          }
+          .bar.advanced::before{
+            width: calc(80% - 10px);
+          }
+          .bar.expert::before{
+            width: calc(100% - 10px);
+          }
+          
+       </style>
+       
+    </head>
+    <body>
+        <center><h1 style="color:black;font-family:'Times New Roman', Times, san-serif;">Skills </h1>
+            <label style="font-family:serif;font-size:medium;color:gray">Things that I'm good at.</label>
+            <div class="container">
+               </center>
+                <div class="bar learning" data-skill="Javascript"></div>
+                <div class="bar learning" data-skill="Bootstrap"></div>
+                <div class="bar back basic" data-skill="C"></div>
+                <div class="bar back basic" data-skill="Java"></div>
+                <div class="bar back basic" data-skill="SQL"></div>
+                <div class="bar back intermediate" data-skill="Python"></div>
+                <div class="bar front advanced" data-skill="CSS3"></div>
+                <div class="bar front expert" data-skill="HTML5"></div>
+              </div><br>
+              <center><label>For Further Information Please Contact.</label></center>
+
+        
+        </body>
+</html>
